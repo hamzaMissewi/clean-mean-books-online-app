@@ -22,7 +22,7 @@ export class BookDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       const bookId = params.get('id');
-      this.book = books.filter(book => book.id == stringify(bookId))[0];
+      this.book = books.filter((book) => book.id == bookId)[0];
      });
   }
 

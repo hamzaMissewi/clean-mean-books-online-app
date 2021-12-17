@@ -1,21 +1,20 @@
 export const books = [
-  
   {
-    id: 1000,
+    id: '1000',
     titre: 'The Prince Kindle Edition',
     auteur: 'The Prince Kindle Edition',
     category: 'science',
     published_date: '10/5/1998',
-    description: 'Uneasy lies the head that wears the crown. The Prince by Machiavelli is echoes that same sentiment in a very elaborate and well-defined manner with all the dos and don ts for the people who hold the power to rule the kingdom. Some have argued that at certain places the book hits hard with satire and talks about how not to rule the state but stating the stark opposite. A great compilation of ideas and thoughts, human nature and ethics that have been discussed in great detail to an extent that concepts have been brainstormed upon so well that one find it easy to conclude.',
+    description:
+      'Uneasy lies the head that wears the crown. The Prince by Machiavelli is echoes that same sentiment in a very elaborate and well-defined manner with all the dos and don ts for the people who hold the power to rule the kingdom. Some have argued that at certain places the book hits hard with satire and talks about how not to rule the state but stating the stark opposite. A great compilation of ideas and thoughts, human nature and ethics that have been discussed in great detail to an extent that concepts have been brainstormed upon so well that one find it easy to conclude.',
     reviews: 2005,
     stars: '3,5 ⭐',
     nbre_page: 20,
     prix: 0.49,
-    imageUrl:
-      'https://m.media-amazon.com/images/I/41uJ8y-qPLS.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/41uJ8y-qPLS.jpg',
   },
   {
-    id: 1,
+    id: '1',
     titre: 'math',
     auteur: 'colby convigton',
     category: 'science',
@@ -30,10 +29,11 @@ export const books = [
       'https://images-na.ssl-images-amazon.com/images/I/51n382CyioL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg',
   },
   {
-    id: 2,
+    id: '2',
     titre: 'Poor economics',
     auteur: 'kumaru usman',
-    description: 'The winners of the Nobel Prize in Economics upend the most common assumptions about how economics works in this gripping and disruptive portrait of how poor people actually live. Why do the poor borrow to save? Why do they miss out on free life-saving immunizations, but pay for unnecessary drugs? In Poor Economics, Abhijit V. Banerjee and Esther Duflo, two award-winning MIT professors, answer these questions based on years of field research from around the world. Called "marvelous, rewarding" by the Wall Street Journal, the book offers a radical rethinking of the economics of poverty and an intimate view of life on 99 cents a day. Poor Economics shows that creating a world without poverty begins with understanding the daily decisions facing the poor.',
+    description:
+      'The winners of the Nobel Prize in Economics upend the most common assumptions about how economics works in this gripping and disruptive portrait of how poor people actually live. Why do the poor borrow to save? Why do they miss out on free life-saving immunizations, but pay for unnecessary drugs? In Poor Economics, Abhijit V. Banerjee and Esther Duflo, two award-winning MIT professors, answer these questions based on years of field research from around the world. Called "marvelous, rewarding" by the Wall Street Journal, the book offers a radical rethinking of the economics of poverty and an intimate view of life on 99 cents a day. Poor Economics shows that creating a world without poverty begins with understanding the daily decisions facing the poor.',
     prix: 500,
     reviews: 8228,
     stars: '⭐⭐⭐⭐',
@@ -44,7 +44,7 @@ export const books = [
     nbre_page: 50,
   },
   {
-    id: 3,
+    id: '3',
     titre: 'Pure Physique',
     auteur: 'Michael Lipowski',
     description: '',
@@ -58,7 +58,7 @@ export const books = [
     nbre_page: 20,
   },
   {
-    id: 4,
+    id: '4',
     titre: 'Predictably Irrational',
     auteur: 'Dr. dan ariely',
     description: '',
@@ -72,10 +72,10 @@ export const books = [
     nbre_page: 50,
   },
   {
-    id: 5,
+    id: '5',
     titre: 'The Storyteller: Tales of Life and Music',
     auteur: 'Drave Grohl',
-    description: '',    
+    description: '',
     prix: 26.94,
     reviews: 8228,
     stars: '4,5 ⭐',
@@ -85,7 +85,7 @@ export const books = [
     nbre_page: 50,
   },
   {
-    id: 6,
+    id: '6',
     titre: 'Geopolitics of blood',
     auteur: 'Safi Said',
     description: '',
@@ -98,7 +98,7 @@ export const books = [
     nbre_page: 50,
   },
   {
-    id: 7,
+    id: '7',
     titre: 'The judge s List: A Novel',
     auteur: 'elon musk',
     description: '',
@@ -112,11 +112,11 @@ export const books = [
     nbre_page: 50,
   },
   {
-    id: 8,
+    id: '8',
     titre: 'Ace the Data Science Interview',
     auteur: 'Drave Grohl',
     description: '',
-    prix: 30.94, 
+    prix: 30.94,
     reviews: 8228,
     stars: '⭐⭐⭐⭐⭐',
     category: 'Science',
@@ -126,7 +126,7 @@ export const books = [
     nbre_page: 25,
   },
   {
-    id: 9,
+    id: '9',
     titre: 'Deep Learning',
     auteur: 'Drave Grohl',
     description: '',
@@ -140,7 +140,7 @@ export const books = [
     nbre_page: 47,
   },
   {
-    id: 10,
+    id: '10',
     titre: 'The Complete book of angular 6',
     auteur: 'Nathan Murray',
     description: '',
@@ -154,7 +154,7 @@ export const books = [
     nbre_page: 50,
   },
   {
-    id: 11,
+    id: '11',
     titre: 'React.js Book: Learning React JavaScript Library From Scratch',
     auteur: 'Greg Sidelnikov',
     description: '',
@@ -167,7 +167,7 @@ export const books = [
     nbre_page: 60,
   },
   {
-    id: 12,
+    id: '12',
     titre: 'Node Cookbook',
     auteur: 'Bethany Griggs',
     description: '',
