@@ -5,15 +5,13 @@ import { BookDetailsComponent } from './book-details/book-details.component';
 import { HomeComponent } from './home.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent},
-  {path: ':id', component: BookDetailsComponent}
+  { path: '', component: HomeComponent },
+  { path: ':id', component: BookDetailsComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes), CommonModule],
   exports: [RouterModule],
-  declarations: [
-    BookDetailsComponent
-  ]
+  declarations: [BookDetailsComponent],
 })
-export class HomeRoutingModule { }
+export class HomeRoutingModule {}

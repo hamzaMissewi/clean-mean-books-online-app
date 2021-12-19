@@ -9,20 +9,27 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
-    { path: 'navbar', component: NavbarComponent},
-    { path: 'home', component: HomeComponent },
-    { path: 'login', component: LoginComponent },
-    { path: 'register', component: RegisterComponent },
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
-    {
-      path: 'chariot',
-      loadChildren: () =>
-        import('./modules/cart/cart.module').then((m) => m.CartModule),
-    },
-    { path: 'admin', loadChildren: () => import('./modules/admin/admin.module').then(m => m.AdminModule) },
-    { path: '**', component: NotFoundComponent },
-
-  ];
+  { path: 'navbar', component: NavbarComponent },
+  // { path: 'home', component: HomeComponent },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
+  },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  {
+    path: 'chariot',
+    loadChildren: () =>
+      import('./modules/cart/cart.module').then((m) => m.CartModule),
+  },
+  {
+    path: 'admin',
+    loadChildren: () =>
+      import('./modules/admin/admin.module').then((m) => m.AdminModule),
+  },
+  { path: '**', component: NotFoundComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes), FormsModule, CommonModule],

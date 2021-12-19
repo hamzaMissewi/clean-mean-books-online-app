@@ -1,58 +1,55 @@
-// import { Injectable } from '@angular/core';
-// import { HttpClient } from "@angular/common/http";
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
+@Injectable({
+  providedIn: 'root',
+})
+export class BookService {
+  // private apiUrl = 'http://localhost:3000/books';
+  // private apiUrl = 'https://my-json-server.typicode.com/houcem-h/public_books_api/books';
+  private apiUrl = 'http://localhost:5000/api/books';
 
-// @Injectable({
-//   providedIn: 'root'
-// })
-// export class CourseService {
+  constructor(private http: HttpClient) {}
 
-//   // private apiUrl = 'http://localhost:3000/courses';
-//   // private apiUrl = 'https://my-json-server.typicode.com/houcem-h/public_courses_api/courses';
-//   private apiUrl = 'http://localhost:3000/api/courses';
+  /**
+   * Get all books
+   * @returns Observable<book[]>
+   */
+  all() {
+    return this.http.get(this.apiUrl);
+  }
 
-//   constructor(private http: HttpClient) { }
+  /**
+   * Get a book with the given id
+   * @param id : book id
+   * @returns Observable<book>
+   */
+  get(id: string) {
+    return this.http.get(this.apiUrl + '/' + id);
+  }
 
-//   /**
-//    * Get all courses
-//    * @returns Observable<Course[]>
-//    */
-//   all() {
-//     return this.http.get(this.apiUrl);
-//   }
+  /**
+   * Create a new book
+   * @param book new book to create
+   */
+  create(book: any) {
+    return this.http.post(this.apiUrl, book);
+  }
 
+  /**
+   * Update a book with the given id
+   * @param id book id to update
+   * @param book new book data
+   */
+  update(id: string, book: any) {
+    return this.http.put(this.apiUrl + '/' + id, book);
+  }
 
-//   /**
-//    * Get a course with the given id
-//    * @param id : course id
-//    * @returns Observable<Course>
-//    */
-//   get(id: string) {
-//     return this.http.get(this.apiUrl + '/' + id)
-//   }
-
-//   /**
-//    * Create a new course
-//    * @param course new course to create
-//    */
-//   create(course: any) {
-//     return this.http.post(this.apiUrl, course);
-//   }
-
-//   /**
-//    * Update a course with the given id
-//    * @param id course id to update
-//    * @param course new course data
-//    */
-//   update(id: string, course: any) {
-//     return this.http.put(this.apiUrl + '/' + id, course);
-//   }
-
-//   /**
-//    * Delete a course with the given id
-//    * @param id course id to delete
-//    */
-//   delete(id: string) {
-//     return this.http.delete(this.apiUrl + '/' + id)
-//   }
-// }
+  /**
+   * Delete a book with the given id
+   * @param id book id to delete
+   */
+  delete(id: string) {
+    return this.http.delete(this.apiUrl + '/' + id);
+  }
+}

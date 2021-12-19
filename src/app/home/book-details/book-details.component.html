@@ -1,17 +1,18 @@
 <h3>Books Details</h3>
 <div class="card mb-3">
-    <img src="{{book?.imageUrl}}" class="card img-top" alt="{{book?.title}}">
-    <div class="card-img-overlay">
-        <h5 class="card-title">{{ book?.title }}</h5>
-        <!-- <p class="card-text">By: <strong>{{ book?.instructor }}</strong></p>
-        <p class="card-text">Last updated: <strong>{{ book?.last_update }}</strong></p> -->
+    <img src="{{book?.imageUrl}}" class="card img-top" alt="{{book?.titre}}" >
+    <!-- <div class="card-img-overlay"> -->
+    <div class="card">
+        <h5 class="card-title">{{ book?.titre }}</h5>
+        <!-- <p class="card-text">By: <strong>{{ book?.instructor }}</strong></p> -->
+        <p class="card-text">date de publication: <strong>{{ book?.published_date }}</strong></p>
       </div>
       <div class="card-body">
-        <h4 class="card-title">{{ book?.title }}</h4>
+        <h4 class="card-title">{{ book?.titre }}</h4>
         <p class="card-text"><strong>Description:</strong> {{ book?.description }}.</p>
-        <p class="card-text"><strong>Instructor:</strong> {{ book?.instructor }}.</p>
-        <p class="card-text"><strong>Language:</strong> {{ book?.language }}.</p>
-        <p class="card-text"><strong>Price:</strong> {{ book?.price|currency }}.</p>
+        <p class="card-text"><strong>Réalisé par:</strong> {{ book?.auteur }}.</p>
+        <p class="card-text"><strong>Reviews:</strong> {{ book?.reviews }}.</p>
+        <p class="card-text"><strong>Price:</strong> {{ book?.prix }}.</p>
         <p class="card-text"><strong>Goals:</strong></p>
         <ul>
           <li *ngFor="let goal of book?.goals">{{ goal }}</li>

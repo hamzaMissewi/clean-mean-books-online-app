@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
-import { BookDetailsComponent } from './book-details/book-details.component';
+// import { BookDetailsComponent } from './book-details/book-details.component';
 
 
 @NgModule({
-  declarations: [
-    BookDetailsComponent
-  ],
+  // declarations: [
+  //   BookDetailsComponent
+  // ],
   imports: [
     CommonModule,
     HomeRoutingModule
